@@ -1,0 +1,11 @@
+.debug:
+  script:
+    |
+    echo $CI_PROJECT_DIR
+    echo $CI_PROJECT_NAME
+    echo $CI_PROJECT_NAMESPACE
+    echo $CI_PROJECT_PATH_SLUG
+    echo $CI_PROJECT_PATH
+    echo $CI_PROJECT_ROOT_NAMESPACE
+    echo $CI_PROJECT_TITLE
+    echo "https://gitlab-ci-token:${CICD_token}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
