@@ -7,7 +7,7 @@ Please refer to the main [AzOps repo/wiki]([https://github.com/azure/azops] ) fo
 
 ## Prerequisites
 
-Before you start, make sure you have followed the steps in the [prerequisites](https://github.com/azure/azops/wiki/prerequisites) article to create required service principal as well as configure the required permissions for AzOps.
+Before you start, make sure you have followed the steps in the [prerequisites](https://github.com/azure/azops/wiki/prerequisites) article to create required service principal as well as configure the required Azure RBAC permissions for AzOps.
 
 ## 1. Import/create project from repository by URL
 
@@ -48,6 +48,7 @@ The token will be used in the pipeline to interact with the GitLab APIs and the 
 |ARM_SUBSCRIPTION_ID|Subscription ID to use for connecting to Azure| |
 |ARM_TENANT_ID| Azure AD tenant ID from service principal creation | |
 |CI_CD_TOKEN| Project access token from previous step | Mask variable |
+
 ![](./media/gitlab_cicd_variables.png)
 
 ## 5. Run initial pull pipeline to bootstrap repository
